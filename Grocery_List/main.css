@@ -1,0 +1,71 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: orange;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.groceries{
+  width: 600px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: wheat;
+  box-shadow: 10px 10px 24px 0 black;
+}
+
+.groceries h1{
+  font-size: 2.5rem;
+  margin-top: 1em;
+}
+
+.groceries i{
+  font-size:2rem;
+  color: orange;
+}
+
+.groceries input{
+  background-color: wheat;
+  font-family: sans-serif;
+  outline: 0;
+  border: 0;
+  border-bottom: 3px solid black;
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+#allItems h2{
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#pencil{
+  cursor: pointer;
+}
+
+@media(max-width:480px){
+  .groceries h1{
+    font-size: 2rem;
+  }
+  .groceries i{
+    font-size: 1.5rem;
+  }
+  .groceries input{
+    font-size: 1rem;
+  }
+  #allItem h2{
+    margin-left: 25px;
+    font-size: 2rem;
+  }
+}
