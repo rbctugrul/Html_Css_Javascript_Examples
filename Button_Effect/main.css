@@ -1,0 +1,46 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+button{
+    background-color: rebeccapurple;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.circle{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    left: 6rem;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+}
+
+@keyframes scale{
+    to{
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}

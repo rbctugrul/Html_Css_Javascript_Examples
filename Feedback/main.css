@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.panel-container{
+  background-color: white;
+  box-shadow: 0 6px 12px -2px rgba(50, 50, 95, 0.25);
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  max-width: 500px;
+}
+
+.panel-container strong{
+  line-height: 2rem;
+}
+
+.ratings-container{
+  display: flex;
+  margin: 1rem 0;
+}
+
+.rating{
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.rating p{
+  margin: 0;
+  font-size: 6rem;
+  transition: transform 0.5s ease;
+}
+
+.rating small{
+  font-weight: bold;
+  font-size: 17px;
+  color: #555;
+  transition: color 0.5s ease;
+}
+
+.rating:hover small, .rating.active small{
+  color: #ff0000;
+}
+
+.rating:hover p, .rating.active p{
+  transform: scale(1.1);
+}
+
+.btn{
+  background-color: tomato;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 120%;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn:active{
+  transform: scale(0.95);
+}
+
+.btn:focus{
+  outline: 0;
+}
+
+.fa-heart{
+  font-size: 3rem;
+  color: #ff0000;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+button:focus{
+  outline: 0;
+}
+
+.slider{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .4s linear;
+}
+
+.active{
+  opacity: 1;
+}
+
+.slide .inner{
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  background-color: rgba(0, 0, 0, .7);
+  color: #eee;
+  padding: 40px 30px;
+  opacity: 0;
+}
+
+.slide.active .inner{
+  opacity: 1;
+}
+
+.slide:nth-child(1){
+  background: url("./image/1.png") no-repeat center/cover;
+}
+
+.slide:nth-child(2){
+  background: url("./image/2.png") no-repeat center/cover;
+}
+
+.slide:nth-child(3){
+  background: url("./image/3.png") no-repeat center/cover;
+}
+
+.slide:nth-child(4){
+  background: url("./image/4.jpg") no-repeat center/cover;
+}
+
+.slide:nth-child(5){
+  background: url("./image/5.png") no-repeat center/cover;
+}
+
+
+.indicators{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: default;
+}
+
+.indicators button{
+  padding: 10px 20px;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, .7);
+  color: #eee;
+  border: 0;
+  cursor: pointer;
+}

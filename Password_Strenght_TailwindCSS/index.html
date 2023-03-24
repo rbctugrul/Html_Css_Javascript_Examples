@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Drag n Drop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+
+    <div class="background" id="background"></div>
+    <div class="bg-white rounded p-10 text-center shadow-md">
+        <h1 class="text-lg font-bold text-purple-700">Sing up</h1>
+        <p class="text-sm text-gray-700">Looks like you don't have an account. Let's create a new accout for <span class="font-bold text-purple-500">rbctugrul@gmail.com</span></p>
+        <div class="my-4 text-left">
+            <label for="email" class="text-gray-900">Email:</label>
+            <input type="text" class="border block w-full p-2 mt-2 rounded" id="email" required placeholder="Please Enter Email">
+        </div>
+        <div class="my-4 text-left">
+            <label for="password" id="passwordLabel" class="text-gray-900">Password:</label>
+            <input type="password" class="border block w-full p-2 mt-2 rounded" id="password" required placeholder="Please Enter Password">
+        </div>
+        <button class="bg-purple-800 text-white py-2 mt-2 inline-block w-full rounded" type="submit">Continue</button>
+    </div>
+
+    <script src='main.js'></script>
+</body>
+</html>

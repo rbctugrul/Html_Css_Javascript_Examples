@@ -1,0 +1,70 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.button{
+    background-color: tomato;
+    border: none;
+    border-radius: 2rem;
+    font-family: sans-serif;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+.notifContainer{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.notif{
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+.notif.red{
+    background-color: red;
+}
+
+.notif.blue{
+    background-color: blue;
+}
+
+.notif.green{
+    background-color: green;
+}
+
+.notif.gray{
+    background-color: gray;
+}
+
+.notif.purple{
+    background-color: rebeccapurple;
+}
+
+.notif.black{
+    background-color: black;
+}
